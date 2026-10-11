@@ -1,0 +1,7 @@
+{
+ "mode": "pipeline",
+ "provider": "gemini",
+ "model": "gemini-3.1-flash-lite",
+ "note": "write.md: bear case mein number zaroor likho; model gemini-3.1-flash-lite (quota)",
+ "words": 518
+}

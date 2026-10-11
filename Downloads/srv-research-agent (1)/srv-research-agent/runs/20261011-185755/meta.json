@@ -1,0 +1,7 @@
+{
+ "mode": "single",
+ "provider": "gemini",
+ "model": "gemini-flash-latest",
+ "note": "baseline",
+ "words": 593
+}

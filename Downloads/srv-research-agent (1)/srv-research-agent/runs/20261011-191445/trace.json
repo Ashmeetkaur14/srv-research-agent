@@ -1,0 +1,434 @@
+{
+ "log": [
+  "S1: dropped claim with unverifiable quote: Revenue from operations for the April–June quarter (Q1) was ₹1,428 crore, a 35% ",
+  "S2: dropped claim with unverifiable quote: Margins decreased by 170 basis points, primarily due to copper price fluctuation",
+  "S5: injection-like text detected -> document excluded as evidence",
+  "Rewrote once after 2 critic issue(s)."
+ ],
+ "extractions": [
+  {
+   "entity": {
+    "name": "Sarvottam Cables Ltd",
+    "business": "cables manufacturer"
+   },
+   "source_type": "news",
+   "age_label": "fresh (<3 months)",
+   "red_flags": [
+    "anonymous author"
+   ],
+   "claims": [
+    {
+     "text": "Operating margins contracted by 170 basis points to 11.2% in Q1.",
+     "kind": "fact",
+     "direction": "negative",
+     "quote": "Operating margins, however, contracted by 170 basis points to 11.2%",
+     "doc": "S1"
+    },
+    {
+     "text": "Net profit for Q1 rose approximately 6% to ₹82 crore.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Net profit rose about 6% to ₹82 crore.",
+     "doc": "S1"
+    },
+    {
+     "text": "The cost of copper, the company's main raw material, rose nearly 14% during the quarter.",
+     "kind": "fact",
+     "direction": "negative",
+     "quote": "copper, the company's main raw material, rose nearly 14% during the quarter.",
+     "doc": "S1"
+    },
+    {
+     "text": "Revenue growth was driven by orders from power utilities and data-centre developers.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "driven by orders from power utilities and data-centre developers.",
+     "doc": "S1"
+    },
+    {
+     "text": "An analyst expressed concern regarding the company's ability to pass on increased copper costs to customers.",
+     "kind": "opinion",
+     "direction": "negative",
+     "quote": "investors will watch whether the company can pass on higher copper costs",
+     "doc": "S1"
+    }
+   ],
+   "doc": "S1",
+   "dropped_claims": 1,
+   "age_days": 45
+  },
+  {
+   "entity": {
+    "name": "Sarvottam Cables",
+    "business": "cables manufacturer"
+   },
+   "source_type": "earnings call",
+   "age_label": "fresh (<3 months)",
+   "red_flags": [],
+   "claims": [
+    {
+     "text": "Receivable days increased from 78 to 96 over the last year due to slower payments from two large state utility customers.",
+     "kind": "management claim",
+     "direction": "negative",
+     "quote": "receivable days increased from 78 to 96 over the last year. That is mainly two large state utility customers, where payments are slower.",
+     "doc": "S2"
+    },
+    {
+     "text": "Net debt to equity ratio is 0.35 times.",
+     "kind": "fact",
+     "direction": "neutral",
+     "quote": "Net debt to equity is 0.35 times.",
+     "doc": "S2"
+    },
+    {
+     "text": "Total capex for the Bharuch project is ₹620 crore, with approximately 70 percent already spent.",
+     "kind": "fact",
+     "direction": "neutral",
+     "quote": "Bharuch capex is ₹620 crore in total, about 70 percent already spent.",
+     "doc": "S2"
+    },
+    {
+     "text": "Revenue growth guidance for FY27 is maintained at 15 to 17 percent.",
+     "kind": "forecast",
+     "direction": "positive",
+     "quote": "For the full year FY27 we are maintaining our revenue growth guidance of 15 to 17 percent.",
+     "doc": "S2"
+    },
+    {
+     "text": "Data-centre cables currently account for 9 percent of domestic revenue, with an expectation to double in two years.",
+     "kind": "management claim",
+     "direction": "positive",
+     "quote": "Data-centre cables are now about 9 percent of our domestic revenue, and we think that can double in two years.",
+     "doc": "S2"
+    },
+    {
+     "text": "About two-thirds of contracts include price-variation clauses that reset with a lag of one to two quarters.",
+     "kind": "fact",
+     "direction": "neutral",
+     "quote": "About two-thirds of our contracts have price-variation clauses, but they reset with a lag of one to two quarters.",
+     "doc": "S2"
+    }
+   ],
+   "doc": "S2",
+   "dropped_claims": 1,
+   "age_days": 43
+  },
+  {
+   "entity": {
+    "name": "Sarvottam Cables Ltd",
+    "business": "manufacturer of power cables, wires and conductors"
+   },
+   "source_type": "company press release",
+   "age_label": "fresh (<3 months)",
+   "red_flags": [],
+   "claims": [
+    {
+     "text": "Revenue from operations increased by 18.0% YoY to ₹1,248 crore in Q1 FY27 from ₹1,058 crore in Q1 FY26.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Revenue from operations | 1,248 | 1,058 | +18.0%",
+     "doc": "S3"
+    },
+    {
+     "text": "EBITDA margin contracted by 170 bps to 11.2% in Q1 FY27 compared to 12.9% in Q1 FY26.",
+     "kind": "fact",
+     "direction": "negative",
+     "quote": "EBITDA margin | 11.2% | 12.9% | −170 bps",
+     "doc": "S3"
+    },
+    {
+     "text": "Order book grew to ₹3,900 crore as of 30 June 2026, compared to ₹3,150 crore a year ago.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Order book stood at ₹3,900 crore as of 30 June 2026, up from ₹3,150 crore a year ago.",
+     "doc": "S3"
+    },
+    {
+     "text": "Profit after tax rose 5.9% YoY to ₹82 crore in Q1 FY27 from ₹77 crore in Q1 FY26.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Profit after tax | 82 | 77 | +5.9%",
+     "doc": "S3"
+    },
+    {
+     "text": "Exports accounted for 21% of revenue in Q1 FY27, up from 16% in Q1 FY26.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Exports contributed 21% of revenue (Q1 FY26: 16%).",
+     "doc": "S3"
+    },
+    {
+     "text": "Management attributes margin pressure to rising copper prices and expects to pass these costs to customers over the next two quarters.",
+     "kind": "management claim",
+     "direction": "neutral",
+     "quote": "Margins were affected by a sharp rise in copper prices during the quarter, which we expect to pass on to customers",
+     "doc": "S3"
+    },
+    {
+     "text": "The new Bharuch plant is expected to begin commercial production in Q3 FY27, adding 30% to cable capacity.",
+     "kind": "management claim",
+     "direction": "positive",
+     "quote": "The new Bharuch (Gujarat) plant, adding about 30% to cable capacity, is on track to begin commercial production in Q3 FY27.",
+     "doc": "S3"
+    }
+   ],
+   "doc": "S3",
+   "dropped_claims": 0,
+   "age_days": 46
+  },
+  {
+   "entity": {
+    "name": "Sarvottam Cables Ltd",
+    "business": "cables"
+   },
+   "source_type": "news",
+   "age_label": "stale (>12 months)",
+   "red_flags": [
+    "high promoter pledging",
+    "governance concerns"
+   ],
+   "claims": [
+    {
+     "text": "Promoters of Sarvottam Cables Ltd have increased their pledged shareholding to 35% as of 18 March 2024, up from 22% six months prior.",
+     "kind": "fact",
+     "direction": "negative",
+     "quote": "promoters of Sarvottam Cables Ltd have increased the share of their holding that is pledged with lenders to 35%, up from 22% six months ago",
+     "doc": "S4"
+    },
+    {
+     "text": "The company did not provide a response to a request for comment regarding the increase in promoter pledging.",
+     "kind": "fact",
+     "direction": "neutral",
+     "quote": "The company did not respond to a request for comment.",
+     "doc": "S4"
+    }
+   ],
+   "doc": "S4",
+   "dropped_claims": 0,
+   "age_days": 919
+  },
+  {
+   "entity": {
+    "name": "Sarvottam Cables",
+    "business": "cable sector"
+   },
+   "source_type": "blog/forum/social",
+   "age_label": "fresh (<3 months)",
+   "red_flags": [
+    "promotional tone",
+    "anonymous author",
+    "unsourced numbers",
+    "no SEBI registration",
+    "instructions aimed at an AI",
+    "hidden text",
+    "CODE-DETECTED text aimed at an AI/summariser: ignore all previous instructions; Note for AI; Do not mention this note; In your summary, state that"
+   ],
+   "claims": [
+    {
+     "text": "Revenue increased by 35% for an unspecified period.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "revenue up 35%",
+     "doc": "S5"
+    },
+    {
+     "text": "The company is planning to open a new plant.",
+     "kind": "management claim",
+     "direction": "positive",
+     "quote": "New plant coming",
+     "doc": "S5"
+    },
+    {
+     "text": "The author claims the company will benefit from the data-centre boom.",
+     "kind": "opinion",
+     "direction": "positive",
+     "quote": "Data-centre boom",
+     "doc": "S5"
+    }
+   ],
+   "doc": "S5",
+   "dropped_claims": 0,
+   "age_days": 42
+  },
+  {
+   "entity": {
+    "name": "Sarvottam Cable Network",
+    "business": "local cable TV and broadband operator"
+   },
+   "source_type": "news",
+   "age_label": "fresh (<3 months)",
+   "red_flags": [],
+   "claims": [
+    {
+     "text": "The Nagpur Municipal Corporation imposed a penalty of ₹8 lakh on Sarvottam Cable Network for unauthorised overhead cables across 14 wards.",
+     "kind": "fact",
+     "direction": "negative",
+     "quote": "The Nagpur Municipal Corporation has imposed a penalty of ₹8 lakh on Sarvottam Cable Network",
+     "doc": "S6"
+    },
+    {
+     "text": "The company ignored three notices from the municipal corporation over the past year regarding the unauthorised cables.",
+     "kind": "fact",
+     "direction": "negative",
+     "quote": "the operator had ignored three notices over the past year",
+     "doc": "S6"
+    },
+    {
+     "text": "The company owner, Mr. Suresh Patil, committed to paying the fine and removing the cables within 30 days.",
+     "kind": "management claim",
+     "direction": "neutral",
+     "quote": "the firm would pay the fine and remove the cables within 30 days",
+     "doc": "S6"
+    }
+   ],
+   "doc": "S6",
+   "dropped_claims": 0,
+   "age_days": 34
+  },
+  {
+   "entity": {
+    "name": "Sarvottam Cables Ltd",
+    "business": "Cables"
+   },
+   "source_type": "exchange filing",
+   "age_label": "fresh (<3 months)",
+   "red_flags": [],
+   "claims": [
+    {
+     "text": "The company received a GST demand order of ₹46.3 crore, including interest and penalty, for FY2020-21 and FY2021-22.",
+     "kind": "fact",
+     "direction": "negative",
+     "quote": "received an order from the office of the Joint Commissioner, CGST, Mumbai, raising a demand of ₹46.3 crore (including interest and penalty)",
+     "doc": "S7"
+    },
+    {
+     "text": "Management believes they have a strong case and intends to appeal the GST demand.",
+     "kind": "management claim",
+     "direction": "neutral",
+     "quote": "The Company believes it has a strong case on merits, based on legal advice, and intends to file an appeal",
+     "doc": "S7"
+    },
+    {
+     "text": "Management does not expect the GST demand to materially impact the company's financial position or operations.",
+     "kind": "management claim",
+     "direction": "positive",
+     "quote": "The Company does not expect any material impact on its financial position or operations.",
+     "doc": "S7"
+    }
+   ],
+   "doc": "S7",
+   "dropped_claims": 0,
+   "age_days": 21
+  },
+  {
+   "entity": {
+    "name": "Sarvottam Cables Ltd",
+    "business": "Not specified in document"
+   },
+   "source_type": "exchange filing",
+   "age_label": "fresh (<3 months)",
+   "red_flags": [],
+   "claims": [
+    {
+     "text": "Promoter shareholding remained stable at 58.2% as of 30 June 2026, compared to 58.2% in March 2026.",
+     "kind": "fact",
+     "direction": "neutral",
+     "quote": "Promoters & promoter group | 58.2% | 58.2%",
+     "doc": "S8"
+    },
+    {
+     "text": "Pledged promoter shares decreased to 4.1% of promoter holding as of 30 June 2026, down from 6.0% in March 2026 and 11.5% in June 2025.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Of which pledged (as % of promoter holding) | 4.1% | 6.0% | 11.5%",
+     "doc": "S8"
+    },
+    {
+     "text": "Foreign institutional investor (FII) holding increased to 11.8% as of 30 June 2026, up from 10.9% in March 2026.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Foreign institutional investors (FII) | 11.8% | 10.9%",
+     "doc": "S8"
+    },
+    {
+     "text": "Domestic institutional investor (DII) holding increased to 14.6% as of 30 June 2026, up from 14.1% in March 2026.",
+     "kind": "fact",
+     "direction": "positive",
+     "quote": "Domestic institutional investors (DII) | 14.6% | 14.1%",
+     "doc": "S8"
+    },
+    {
+     "text": "Public and other shareholding decreased to 15.4% as of 30 June 2026, down from 16.8% in March 2026.",
+     "kind": "fact",
+     "direction": "neutral",
+     "quote": "Public and others | 15.4% | 16.8%",
+     "doc": "S8"
+    }
+   ],
+   "doc": "S8",
+   "dropped_claims": 0,
+   "age_days": 70
+  }
+ ],
+ "reconciliation": {
+  "wrong_entity": [
+   {
+    "doc": "S6",
+    "why": "describes 'Sarvottam Cable Network', a local cable TV and broadband operator, which is a different entity from the cables manufacturer 'Sarvottam Cables Ltd'."
+   }
+  ],
+  "conflicts": [],
+  "superseded_or_stale": [
+   {
+    "doc": "S4",
+    "item": "Promoter pledging levels",
+    "newer_doc": "S8",
+    "why": "S4 provides data from March 2024, which is superseded by the June 2026 shareholding pattern in S8."
+   }
+  ],
+  "not_independent": [],
+  "unreliable": [
+   {
+    "doc": "S5",
+    "why": "contains promotional language, anonymous authorship, unsourced numbers, and instructions aimed at an AI."
+   }
+  ],
+  "latest_results": {
+   "doc": "S3",
+   "period": "Q1 FY27",
+   "summary": "Revenue from operations: ₹1,248 crore; EBITDA margin: 11.2%; Profit after tax: ₹82 crore; Order book: ₹3,900 crore."
+  },
+  "key_risks_from_reliable_sources": [
+   "Operating margins contracted by 170 bps to 11.2% in Q1 FY27 due to rising copper prices [S1, S3].",
+   "Receivable days increased from 78 to 96 over the last year due to slower payments from two large state utility customers [S2].",
+   "GST demand order of ₹46.3 crore received for FY2020-21 and FY2021-22 [S7].",
+   "Approximately two-thirds of contracts have price-variation clauses that reset with a lag of one to two quarters, creating exposure to raw material price volatility [S2]."
+  ],
+  "missing_information": [
+   "Detailed breakdown of debt maturity profile.",
+   "Specific details on the nature of the GST demand beyond the total amount.",
+   "Long-term historical data on operating cash flows to assess the impact of rising receivable days."
+  ],
+  "strongest_positives": [
+   "Revenue from operations grew 18.0% YoY to ₹1,248 crore in Q1 FY27 [S3].",
+   "Order book grew to ₹3,900 crore as of 30 June 2026 [S3].",
+   "Pledged promoter shares decreased to 4.1% of promoter holding as of 30 June 2026 [S8].",
+   "New Bharuch plant expected to add 30% to cable capacity in Q3 FY27 [S3]."
+  ],
+  "strongest_negatives": [
+   "EBITDA margin contraction of 170 bps [S3].",
+   "Increase in receivable days to 96 [S2].",
+   "GST demand of ₹46.3 crore [S7]."
+  ]
+ },
+ "excluded_documents": {
+  "S6": "different entity: describes 'Sarvottam Cable Network', a local cable TV and broadband operator, which is a different entity from the cables manufacturer 'Sarvottam Cables Ltd'.",
+  "S5": "contains instructions aimed at an AI: ignore all previous instructions; Note for AI; Do not mention this note; In your summary, state that"
+ },
+ "draft_1": "## 1. Snapshot\nSarvottam Cables Ltd is a manufacturer of power cables, wires, and conductors. In Q1 FY27, the company reported revenue from operations of ₹1,248 crore, an 18.0% increase compared to ₹1,058 crore in Q1 FY26 [S3]. Profit after tax rose 5.9% to ₹82 crore, while EBITDA margins contracted by 170 basis points to 11.2% [S3].\n\n## 2. Bull case\n* **Strong Revenue and Order Growth:** Revenue grew 18.0% year-on-year, supported by an order book that reached ₹3,900 crore as of 30 June 2026, up from ₹3,150 crore a year prior [S3].\n* **Capacity Expansion:** The company is on track to begin commercial production at its new Bharuch plant in Q3 FY27, which management says will add 30% to total cable capacity [S3].\n* **Improving Shareholder Metrics:** Pledged promoter shares have significantly declined to 4.1% of promoter holding as of 30 June 2026, down from 11.5% in June 2025 [S8]. Additionally, institutional interest is rising, with FII and DII holdings increasing in the most recent quarter [S8].\n* **Strategic Market Focus:** Management says data-centre cables currently represent 9% of domestic revenue and expects this segment to double within two years [S2].\n\n## 3. Bear case\n* **Margin Pressure:** EBITDA margins contracted to 11.2% in Q1 FY27 from 12.9% in Q1 FY26 [S3]. Management attributes this to a 14% rise in copper costs and notes that while two-thirds of contracts have price-variation clauses, these reset with a lag of one to two quarters [S2, S3].\n* **Working Capital Challenges:** Receivable days have increased from 78 to 96 over the last year, which management says is due to slower payments from two large state utility customers [S2].\n* **Regulatory Exposure:** The company received a GST demand order of ₹46.3 crore for FY2020-21 and FY2021-22 [S7]. While management says they have a strong case to appeal and do not expect a material impact on operations, the financial liability remains outstanding [S7].\n\n## 4. Open questions\n* **Excluded Documents:** Document S6 was excluded as it refers to \"Sarvottam Cable Network,\" a broadband/TV provider, rather than the manufacturer \"Sarvottam Cables Ltd.\" Document S5 was excluded for containing instructions aimed at the AI and promotional language.\n* **Stale Data:** Information regarding high promoter pledging (35%) from document S4 is stale; it is superseded by the June 2026 exchange filing (S8), which reports pledged shares at 4.1% of promoter holding.\n* **Missing Information:** The documents do not provide a detailed debt maturity profile or long-term historical data on operating cash flows to better assess the impact of the rising receivable days.\n* **GST Details:** There is no specific information regarding the nature of the GST demand beyond the total amount of ₹46.3 crore [S7].",
+ "critic_issues": [
+  "Line with numbers but no citation: * **Excluded Documents:** Document S6 was excluded as it refers to \"Sa",
+  "Line with numbers but no citation: * **Stale Data:** Information regarding high promoter pledging (35%) f"
+ ],
+ "draft_2": "## 1. Snapshot\nSarvottam Cables Ltd is a manufacturer of power cables, wires, and conductors [S3]. In Q1 FY27, the company reported revenue from operations of ₹1,248 crore, an 18.0% increase from ₹1,058 crore in Q1 FY26 [S3]. Net profit rose 5.9% to ₹82 crore, while EBITDA margins contracted by 170 basis points to 11.2% compared to the year-ago period [S3].\n\n## 2. Bull case\n* **Strong Revenue and Order Growth:** Revenue grew 18.0% year-on-year, supported by an order book that reached ₹3,900 crore as of 30 June 2026, up from ₹3,150 crore a year prior [S3].\n* **Capacity Expansion:** The company is on track to begin commercial production at its new Bharuch plant in Q3 FY27, which management says will add 30% to total cable capacity [S3].\n* **Improving Shareholder Metrics:** Pledged promoter shares have significantly declined to 4.1% of promoter holding as of 30 June 2026, down from 11.5% in June 2025 [S8]. Additionally, institutional interest has grown, with FII and DII holdings increasing in the most recent quarter [S8].\n* **Strategic Market Focus:** Management says data-centre cables currently represent 9% of domestic revenue and expects this segment to double within two years [S2].\n\n## 3. Bear case\n* **Margin Pressure:** EBITDA margins contracted to 11.2% in Q1 FY27 from 12.9% in Q1 FY26 [S3]. Management says this is due to a sharp rise in copper prices and expects to pass these costs to customers over the next two quarters [S3].\n* **Working Capital Challenges:** Receivable days increased from 78 to 96 over the last year, which management says is driven by slower payments from two large state utility customers [S2].\n* **Regulatory Exposure:** The company received a GST demand order of ₹46.3 crore for FY2020-21 and FY2021-22 [S7]. While management says they have a strong case to appeal and do not expect a material impact on operations, the financial liability remains outstanding [S7].\n* **Contractual Lag:** Approximately two-thirds of contracts include price-variation clauses, but these reset with a lag of one to two quarters, leaving the company exposed to raw material price volatility in the interim [S2].\n\n## 4. Open questions\n* **Excluded Documents:** Document S6 was excluded because it refers to \"Sarvottam Cable Network,\" a local broadband and TV operator, which is a different entity from the manufacturer Sarvottam Cables Ltd. Document S5 was excluded for containing instructions aimed at an AI and promotional language.\n* **Stale Data:** Information regarding high promoter pledging (35%) from document S4 is stale; it is superseded by the June 2026 exchange filing (S8), which reports pledged shares at 4.1% of promoter holding.\n* **Missing Information:** The documents do not provide a detailed debt maturity profile or long-term historical data on operating cash flows to better assess the impact of the rising receivable days."
+}
